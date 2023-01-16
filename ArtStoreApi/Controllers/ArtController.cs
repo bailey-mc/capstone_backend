@@ -1,8 +1,14 @@
 using ArtStoreApi.Models;
 using ArtStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Http.Cors;
+
+// [EnableCors("MyAllowSpecificOrigins")]
+
 
 namespace ArtStoreApi.Controllers;
+[EnableCors(origins: "http:/localhost:3000", headers: "*", methods: "*")]
+// [EnableCors("MyAllowSpecificOrigins")]
 
 [ApiController]
 [Route("api/[controller]")]
@@ -16,6 +22,8 @@ public class ArtController : ControllerBase{
     public async Task<List<Art>> Get() =>
         await _artService.GetAsync();
 
+// [EnableCors("MyAllowSpecificOrigins")]
+    
     [HttpGet("{id:length(24)}")]
     public async Task<ActionResult<Art>> Get(string id)
     {
