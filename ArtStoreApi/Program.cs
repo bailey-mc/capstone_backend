@@ -40,6 +40,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+//not sure i need this
+
+app.UseRouting();
+
 
 //for cors requests
 app.UseCors(MyAllowSpecificOrigins);

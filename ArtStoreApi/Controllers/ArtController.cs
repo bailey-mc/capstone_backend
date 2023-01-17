@@ -7,8 +7,8 @@ using System.Web.Http.Cors;
 
 
 namespace ArtStoreApi.Controllers;
-[EnableCors(origins: "http:/localhost:3000", headers: "*", methods: "*")]
-// [EnableCors("MyAllowSpecificOrigins")]
+[EnableCors(origins: "http://localhost:300*", headers: "*", methods: "*")]
+// [EnableCors("_myAllowSpecificOrigins")]
 
 [ApiController]
 [Route("api/[controller]")]
