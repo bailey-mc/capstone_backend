@@ -18,4 +18,9 @@ public class Art
     public int Year { get; set; }
     
     public decimal Price { get; set; } 
+
+    //new
+    public string Image { get; set; } = null!;
+
+    public string Collection { get; set; } = null!;
 }
