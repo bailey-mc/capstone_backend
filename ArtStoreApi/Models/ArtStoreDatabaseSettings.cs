@@ -8,3 +8,5 @@ public class ArtStoreDatabaseSettings
 
     public string ArtCollectionName { get; set; } = null!;
 }
+
+//the ArtStoreDatabaseSettings class is used to store the ArtStoreDatabase property values from appsettings.json . the C# and JSON property names are identical to ease mapping process

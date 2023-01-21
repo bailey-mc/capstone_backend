@@ -23,8 +23,11 @@ builder.Services.AddCors(options =>
 builder.Services.Configure<ArtStoreDatabaseSettings>(
     builder.Configuration.GetSection("ArtStoreDatabase"));
 
+//BooksService class is registered w/ DI to support constructor injection in consuming classes
 builder.Services.AddSingleton<ArtService>();
 
+
+//
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

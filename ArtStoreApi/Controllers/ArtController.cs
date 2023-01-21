@@ -8,7 +8,6 @@ using System.Web.Http.Cors;
 
 namespace ArtStoreApi.Controllers;
 [EnableCors(origins: "http://localhost:300*", headers: "*", methods: "*")]
-// [EnableCors("_myAllowSpecificOrigins")]
 
 [ApiController]
 [Route("api/[controller]")]
@@ -21,8 +20,6 @@ public class ArtController : ControllerBase{
     [HttpGet]
     public async Task<List<Art>> Get() =>
         await _artService.GetAsync();
-
-// [EnableCors("MyAllowSpecificOrigins")]
     
     [HttpGet("{id:length(24)}")]
     public async Task<ActionResult<Art>> Get(string id)
