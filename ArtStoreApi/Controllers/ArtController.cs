@@ -1,13 +1,13 @@
 using ArtStoreApi.Models;
 using ArtStoreApi.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Web.Http.Cors;
+// using System.Web.Http.Cors;
 
 // [EnableCors("MyAllowSpecificOrigins")]
 
 
 namespace ArtStoreApi.Controllers;
-[EnableCors(origins: "http://localhost:300*", headers: "*", methods: "*")]
+// [EnableCors(origins: "http://localhost:300*", headers: "*", methods: "*")]
 
 [ApiController]
 [Route("api/[controller]")]
