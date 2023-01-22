@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.Text.Json.Serialization;
 
 //namespace used to organize classes and control scope
 namespace ArtStoreApi.Models;
@@ -13,6 +14,7 @@ public class Art
     public string? Id { get; set; }
 
     [BsonElement("Name")]
+    [JsonPropertyName("Name")]
     //The attribute's value of "Name" represents the property name in the MongoDB collection
     public string ArtName { get; set; } = null!;
 
