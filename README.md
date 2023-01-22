@@ -15,10 +15,14 @@ failed ... something missing in dockerfile
 
 tried this buildpack
 https://github.com/jincod/dotnetcore-buildpack
-doesn't work w/ mongo
+doesn't work w/ cors??
 giving up on deploying to heroku for the moment... may try deploying to azure later on
 
-# Installation Instructions
+## Tech Used
+- ASP.NET Core
+- MongoDB
+
+## Installation Instructions
 - clone capstone_backend repo onto your local machine -cd into ArtStoreApi
     - dotnet build
     - dotnet run
