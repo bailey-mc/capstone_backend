@@ -7,7 +7,7 @@ using System.Web.Http.Cors;
 
 
 namespace ArtStoreApi.Controllers;
-[EnableCors(origins: "https://63cdc038f0027b0009f17cb6--bright-meringue-780c03.netlify.app", headers: "*", methods: "*")]
+[EnableCors(origins: "https://dotnetheadache.netlify.app", headers: "*", methods: "*")]
 
 [ApiController]
 [Route("api/[controller]")]
